@@ -32,8 +32,8 @@
           <p>Domingo: 4:00 AM - 10:00 PM</p>
         </div>
         <div class="about-button">
-          <v-btn color="primary">
-            <span class="about-button-text">Llamar xxx-xxxxx </span></v-btn
+          <v-btn color="primary" v-on:click="triggerPhoneCall()">
+            <span class="about-button-text">Llamar al 253-3321 </span></v-btn
           >
         </div>
       </v-col>
@@ -48,7 +48,7 @@
         >
         </v-img>
         <div class="about-button">
-          <v-btn color="primary">
+          <v-btn color="primary" v-on:click="getGoogleDirections()">
             <span class="about-button-text">Obtener direccion </span></v-btn
           >
         </div>
@@ -73,6 +73,9 @@ export default {
     getGoogleDirections() {
       window.location.href =
         "https://www.google.com/maps/dir//8.8792798,-79.7828289/@8.8791877,-79.7832593,20.26z";
+    },
+    triggerPhoneCall() {
+      window.open("tel:2533321");
     },
   },
 };
