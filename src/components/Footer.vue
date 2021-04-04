@@ -28,7 +28,7 @@ export default {
         { title: "Menu", icon: "cake-variant", id: "Menu" },
         { title: "Galeria", icon: "image", id: "Gallery" },
         { title: "Contacto", icon: "account", id: "About" },
-        { title: "Localizacion", icon: "map-marker", id: "About" },
+        { title: "Direccion", icon: "map-marker", id: "About" },
       ],
     };
   },
