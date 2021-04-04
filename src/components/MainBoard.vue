@@ -1,6 +1,6 @@
 <template>
   <v-carousel
-    :height="isMobile ? 500 : 200"
+    :height="isMobile ? 400 : 500"
     cycle
     hide-delimiter-background
     show-arrows-on-hover
@@ -12,7 +12,7 @@
 
 <script>
 import bakeryMain from "../assets/bakery_main.jpeg";
-import mainBanner from "../assets/main_banner.png";
+import boardOne from "../assets/board_1.jpg";
 
 export default {
   name: "MainBoard",
@@ -20,10 +20,9 @@ export default {
     return {
       image: bakeryMain,
       images: [
-        { src: mainBanner },
         { src: bakeryMain },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
+          src: boardOne,
         },
       ],
     };

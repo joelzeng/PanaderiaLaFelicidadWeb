@@ -4,8 +4,8 @@
 
     <v-main>
       <MainBoard />
-      <section id="Cakes">
-        <Cakes />
+      <section id="Menu">
+        <Menu />
       </section>
       <section id="Gallery">
         <Gallery />
@@ -24,7 +24,7 @@ import Header from "./components/Header";
 import MainBoard from "./components/MainBoard";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
-import Cakes from "./components/Cakes";
+import Menu from "./components/Menu";
 import About from "./components/About";
 
 export default {
@@ -35,7 +35,7 @@ export default {
     MainBoard,
     Footer,
     Gallery,
-    Cakes,
+    Menu,
     About,
   },
 

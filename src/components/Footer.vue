@@ -12,10 +12,8 @@
         {{ item.title }}
       </v-btn>
       <v-col class="primary py-4 text-center text-color disclaimer" cols="12">
-        © {{ new Date().getFullYear() }} —
-        <strong>
-          Panaderia y Dulceria La Felicidad. All rights reserved.</strong
-        >
+        <strong> Copyrights © Panaderia y Dulceria La Felicidad</strong>
+        {{ new Date().getFullYear() }}
       </v-col>
     </v-row>
   </v-footer>
@@ -27,7 +25,7 @@ export default {
   data() {
     return {
       menuItems: [
-        { title: "Cakes", icon: "cake-variant", id: "Cakes" },
+        { title: "Menu", icon: "cake-variant", id: "Menu" },
         { title: "Galeria", icon: "image", id: "Gallery" },
         { title: "Contacto", icon: "account", id: "About" },
         { title: "Localizacion", icon: "map-marker", id: "About" },

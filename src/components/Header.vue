@@ -1,7 +1,7 @@
 <template>
   <!-- <v-app-bar color="primary"> -->
   <!-- Desktop v-if="!isMobile"-->
-  <v-toolbar color="primary">
+  <v-toolbar color="primary" height="100px">
     <v-toolbar-title>
       <v-img :src="logo"></v-img>
     </v-toolbar-title>
@@ -64,7 +64,7 @@ export default {
     return {
       logo: logo,
       menuItems: [
-        { title: "Cakes", icon: "cake-variant", id: "Cakes" },
+        { title: "Menu", icon: "silverware", id: "Menu" },
         { title: "Galeria", icon: "image", id: "Gallery" },
         { title: "Contacto", icon: "account", id: "About" },
         { title: "Localizacion", icon: "map-marker", id: "About" },
