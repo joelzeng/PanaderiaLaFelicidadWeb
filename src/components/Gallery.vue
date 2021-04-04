@@ -1,6 +1,8 @@
 <template>
   <v-container fluid class="gallery">
-    <div>Galeria</div>
+    <v-row justify="center" class="text-center">
+      <v-col cols="12" class="gallery_title">Galeria</v-col>
+    </v-row>
     <v-container :class="isMobile ? '' : 'gallery-inner'">
       <v-row>
         <v-col v-for="n in 9" :key="n" class="d-flex child-flex" cols="4">
@@ -39,6 +41,10 @@ export default {
 <style scoped>
 .gallery {
   background: #f4f1da;
+}
+
+.gallery_title {
+  font-size: 3rem;
 }
 
 .gallery-inner {
