@@ -5,7 +5,8 @@
   "scripts": {
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "vue-cli-service serve"
+    "start": "vue-cli-service serve",
+    "deploy": "aws --region us-west-2 --profile vue-deployer s3 sync ./dist s3://panaderia-la-felicida-web --delete"
   },
   "dependencies": {
     "@vue/cli": "^4.5.12",
