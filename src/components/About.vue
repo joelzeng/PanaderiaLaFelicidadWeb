@@ -1,28 +1,57 @@
 <template>
-  <v-container fluid class="about_container">
+  <v-container class="about_container">
     <v-row>
-      <v-col class="md6"> asdfasdf</v-col>
+      <v-col class="md4">
+        <div class="about-title">Contactanos</div>
+        <div class="about-text">Tienes alguna pregunta?</div>
+        <div>
+          <p>Nosotros tenemos respuestas</p>
+          Envianos un email a panaderialafelicidad@gmail.com
+        </div>
+        <div class="about-button">
+          <v-btn color="primary">
+            <a href="mailto:joelzeng@hotmail.com" class="about-button-text"
+              >Enviar Email</a
+            >
+          </v-btn>
+        </div>
+        <div class="about-logo">
+          <v-img :src="logoImg" width="250px"></v-img>
+        </div>
+      </v-col>
 
-      <v-col class="md6">
-        <!-- <GmapMap
-          :center="{ lat: 8.879312, lng: -79.782865 }"
-          :zoom="17"
-          map-type-id="terrain"
-          style="width: 350px; height: 300px"
-        >
-          <GmapMarker
-            :position="{ lat: 8.879312, lng: -79.782865 }"
-            :clickable="true"
-            @click="getGoogleDirections"
-          />
-        </GmapMap> -->
+      <v-col class="md4">
+        <div class="about-title">Horario</div>
+        <div class="about-text-schedule">
+          <p>Lunes: 4:00 AM - 10:00 PM</p>
+          <p>Martes: 4:00 AM - 10:00 PM</p>
+          <p>Miercoles: 4:00 AM - 10:00 PM</p>
+          <p>Jueves: 4:00 AM - 10:00 PM</p>
+          <p>Viernes: 4:00 AM - 10:00 PM</p>
+          <p>Sabado: 4:00 AM - 10:00 PM</p>
+          <p>Domingo: 4:00 AM - 10:00 PM</p>
+        </div>
+        <div class="about-button">
+          <v-btn color="primary">
+            <span class="about-button-text">Llamar xxx-xxxxx </span></v-btn
+          >
+        </div>
+      </v-col>
+
+      <v-col class="md4">
+        <div class="about-title">Direccion</div>
         <v-img
           :src="mapImg"
           @click="getGoogleDirections"
-          width="350px"
+          width="240px"
           class="google-map"
         >
         </v-img>
+        <div class="about-button">
+          <v-btn color="primary">
+            <span class="about-button-text">Obtener direccion </span></v-btn
+          >
+        </div>
       </v-col>
     </v-row>
   </v-container>
@@ -30,12 +59,14 @@
 
 <script>
 import map from "../assets/map.png";
+import logo from "../assets/la_felicidad_logo.png";
 
 export default {
   name: "About",
   data() {
     return {
       mapImg: map,
+      logoImg: logo,
     };
   },
   methods: {
@@ -48,6 +79,11 @@ export default {
 </script>
 
 <style scoped>
+p {
+  line-height: 32px; /* within paragraph */
+  margin-bottom: -0.17rem; /* between paragraphs */
+}
+
 .about_container {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -55,5 +91,26 @@ export default {
 
 .google-map {
   cursor: pointer;
+  margin-top: 10px;
+}
+
+.about-title {
+  color: #452e20;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.about-text {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+}
+.about-button {
+  margin-top: 1rem;
+}
+.about-button-text {
+  color: black;
+}
+.about-logo {
+  margin-top: 2rem;
 }
 </style>

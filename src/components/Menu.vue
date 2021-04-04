@@ -18,7 +18,7 @@
       >
     </v-row>
     <v-row justify="space-between" class="menu_cake_row">
-      <v-col md="7" :class="isMobile ? '' : 'menu_inner_right'">
+      <v-col md="6" :class="isMobile ? '' : 'menu_inner_right'">
         <div class="menu_inner_title">CAKES</div>
         <div class="menu_inner_text">
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -90,7 +90,7 @@ export default {
 }
 
 .menu_cake_img {
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .menu_juice_img,
